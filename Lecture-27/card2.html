@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card | II</title>
+
+    <style>
+      * {
+        margin: 0;
+        margin: 0;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        min-height: 720px;
+        background: #02aab0; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #00cdac,
+          #02aab0
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #00cdac, #02aab0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      .card {
+        width: 400px;
+        height: 600px;
+        background-color: white;
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+      }
+
+      .card img {
+        width: 20vw;
+        height: 60%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 10px 20px;
+        width: 75%;
+        text-align: center;
+      }
+      .amount-box {
+        width: 80%;
+        height: 10%;
+        background-color: #00cdac;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      #left-box {
+        width: fit-content;
+        display: flex;
+        gap: 15px;
+      }
+      #text-amountBox {
+      }
+
+      #paymentButton {
+        width: 80%;
+        height: 9%;
+        background-color: rgb(17, 213, 197);
+        color: white;
+        border-radius: 10px;
+        border: none;
+        font-weight: bold;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      }
+      .cancelBox a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #474a49;
+      }
+
+      #left-box {
+        display: flex;
+        gap: 15px;
+        height: 100%;
+        align-items: center;
+      }
+      #img-box img {
+        height: 3rem;
+        width: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="text-box">
+          <img src="/img/order.png" alt="" />
+          <h2>Order Summery</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+            laudantium!
+          </p>
+        </div>
+
+        <div class="amount-box">
+          <div id="left-box">
+            <div id="img-box">
+              <img src="/img/music-logo.png" alt="" />
+            </div>
+            <div id="text-amountBox">
+              <p>Amount</p>
+              <p>$99.00</p>
+            </div>
+          </div>
+
+          <div class="rightbox">
+            <a href="">Chnage</a>
+          </div>
+        </div>
+
+        <button id="paymentButton">Procced To Payment</button>
+        <div class="cancelBox">
+          <a href=""> Cancel Order</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

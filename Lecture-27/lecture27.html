@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating a Cards</title>
+    <style>
+        *{
+            margin: 0;
+            margin: 0;
+        }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        min-height: 720px;
+        background: #02aab0; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #00cdac,
+          #02aab0
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #00cdac,
+          #02aab0
+        ); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+
+      .card{
+        background-color: aliceblue;
+        width: 360px;
+        height: 520px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 20px;
+
+      }
+      .card img{
+        height: 57%;
+        border-radius: 10px;
+      }
+     .card h2{
+      font-weight: bold;
+      font-size: 1.5rem;
+     }
+     .card p{
+      font-size: 1.2em;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="./img/download.png" alt="" />
+        <h2>Improving Frontend Skills By Making Such Kind Of Project</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+          mollitia id quod illum autem atque voluptatibus, vitae hic eius a
+         tore
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
