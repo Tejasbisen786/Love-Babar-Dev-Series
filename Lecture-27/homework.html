@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 768px;
+      }
+      .card-1 {
+        width: 360px;
+        height: 360px;
+        background-color: black;
+        background-size: 50%;
+        background: url("./Bg/web-user-experience-vector.jpg");
+      }
+      .card-1 img {
+        width: 340px;
+        height: 320px;
+      }
+      .card-2 {
+        background-color: blueviolet;
+        width: 360px;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        /* margin: 0; */
+      }
+      .card-2 h2 {
+        color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .card-2 p {
+        color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1rem;
+      }
+      .userCount {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-1">
+        <img src="/Bg/user-flow-concept-illustration_114360-1818.avif" alt="" />
+      </div>
+      <div class="card-2">
+        <h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nostrum
+          optio rerum eius molestiae! Asperiores laborum minima assumenda labore
+          libero?
+        </p>
+        <div class="userCount">
+          <h2>10K +</h2>
+          <h2>214</h2>
+          <h2>12M +</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
