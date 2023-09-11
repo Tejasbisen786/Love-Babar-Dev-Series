@@ -1,11 +1,14 @@
 const { json } = require("body-parser");
 
 const getAllProduct = async (req, res) => {
-  res.status(200), json({ msg: "im getallProducts" });
+  res.status(200). json({ msg: "im getallProducts" });
 };
 
 const getAllProductTesting = async (req, res) => {
-  res.status(200), json({ msg: "im getallProductsTesting" });
+  res.status(200). json({ msg: "im getallProductsTesting" });
 };
 
-module.exports = { getAllProduct, getAllProductTesting };
+
+
+
+module.exports = { getAllProduct, getAllProductTesting};
