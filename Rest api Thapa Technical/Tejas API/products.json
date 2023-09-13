@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Redmi 6",
+    "price": 199,
+    "feature": true,
+    "company": "Xioami"
+  },
+  {
+    "name": "POCO C51",
+    "price": 130,
+    "feature": true,
+    "company": "POCO"
+  },
+  {
+    "name": "Iphone 14",
+    "price": 189,
+    "feature": true,
+    "company": "Apple"
+  },
+  {
+    "name": "Redmi 6a",
+    "price": 299,
+    "feature": true,
+    "company": "Xioami"
+  },
+  {
+    "name": "iphone 15",
+    "price": 200,
+    "feature": true,
+    "company": "Apple"
+  },
+  {
+    "name": "Poco C55",
+    "price": 199,
+    "feature": true,
+    "company": "POCO"
+  }
+]

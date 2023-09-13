@@ -1,14 +1,30 @@
 const { json } = require("body-parser");
+const Product = require("../models/product");
+const product = require("../models/product");
 
 const getAllProduct = async (req, res) => {
-  res.status(200). json({ msg: "im getallProducts" });
+
+  const {company}=req.query
+
+const queryObject={}
+if(company)
+{
+  queryObject.company=company;
+}
+
+  const myData = await Product.find(queryObject);
+
+  res.status(200).json({ myData });
 };
 
 const getAllProductTesting = async (req, res) => {
-  res.status(200). json({ msg: "im getallProductsTesting" });
+
+
+
+
+  const myData = await Product.find(req.query);
+
+  res.status(200).json({ myData});
 };
 
-
-
-
-module.exports = { getAllProduct, getAllProductTesting};
+module.exports = { getAllProduct, getAllProductTesting };
