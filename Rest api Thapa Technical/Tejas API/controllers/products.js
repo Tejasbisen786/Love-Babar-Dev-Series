@@ -3,14 +3,21 @@ const Product = require("../models/product");
 const product = require("../models/product");
 
 const getAllProduct = async (req, res) => {
+  const { company, name, feature,sort } = req.query;
 
-  const {company}=req.query
+  const queryObject = {};
+  if (company) {
+    queryObject.company = company;
+  }
+  if (name) {
+    queryObject.name = { $regex: name, $options: "i" };
+  }
 
-const queryObject={}
-if(company)
-{
-  queryObject.company=company;
-}
+  if (feature) {
+    queryObject.feature = feature;
+  }
+
+ 
 
   const myData = await Product.find(queryObject);
 
@@ -19,12 +26,11 @@ if(company)
 
 const getAllProductTesting = async (req, res) => {
 
+  
+  const myData = await Product.find(req.query).sort("price"); 
 
 
-
-  const myData = await Product.find(req.query);
-
-  res.status(200).json({ myData});
+  res.status(200).json({ myData });
 };
 
 module.exports = { getAllProduct, getAllProductTesting };
